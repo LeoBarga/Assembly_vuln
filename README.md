@@ -105,4 +105,4 @@ Overflow riuscito!
 
 ## Note
 
-- Visto l'aiuto non indifferente nella comprensione del linguaggio e nello svolgimento di questo progetto inserisco qua il link del manuale di Assembly liberamente consultabile online che ho consultato, scritto da Paul Carter e tradotto da Giacomo Bruschi: https://pacman128.github.io/static/pcasm-book-italian.pdf
+- Visto l'aiuto non indifferente nella comprensione del linguaggio e nello svolgimento di questo progetto inserisco qua il link del manuale di Assembly liberamente disponibile online che ho consultato, scritto da Paul Carter e tradotto da Giacomo Bruschi: https://pacman128.github.io/static/pcasm-book-italian.pdf
