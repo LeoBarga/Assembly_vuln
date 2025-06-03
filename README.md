@@ -52,8 +52,9 @@ chmod 777 file
 ```
 5. Avvia il programma con:
 ```bash
-./file [INPUT]
+./file
 ```
+6. Inserisci input
 
 Con un input sufficientemente grande (tipo una serie di "A") si otterrà un overflow.
 
