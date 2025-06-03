@@ -7,10 +7,20 @@ _start:
     call my_function     ; chiama la funzione vulnerabile
     jmp fine             ; salta la fine
 
+    vulnerabile:
+    ; codice a cui saltare se l'attaccante riesce!
+    ; stampa qualcosa per segnalare che ci sei finito
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, msg
+    mov edx, msglen
+    int 0x80
+    jmp uscita
+
 my_function:
     push ebp
     mov ebp, esp
-    sub ep, 16          ; alloca un buffer da 16 byte nello stack
+    sub esp, 16          ; alloca un buffer da 16 byte nello stack
 
 ; syscall read: legge 64 byte (OVERFLOW)
     mov eax, 3
@@ -31,7 +41,7 @@ fine:
     int 0x80
 
 uscita:
-    mov ex, 1
+    mov eax, 1
     xor ebx, ebx
     int 0x80
 
