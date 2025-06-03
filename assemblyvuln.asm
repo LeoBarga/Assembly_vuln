@@ -36,7 +36,7 @@ my_function:
 
 fine:
     ; se il programma finisse normalmente
-    mov eax, 1        ;
+    mov eax, 1        
     xor ebx, ebx      ; exit code = 0
     int 0x80
 
@@ -46,5 +46,5 @@ uscita:
     int 0x80
 
 SECTION .data
-msg db "Overflow riuscito!\n", 0x0
+msg db "Overflow riuscito!", 0x0A
 msglen equ $ - msg
